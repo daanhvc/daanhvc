@@ -1,0 +1,32 @@
+<html>
+<head>
+    
+</head>
+<body>
+
+    <h1>Verhoog/Verlaag</h1>
+
+    <p>Huidige waarde: <span id="waarde">0</span></p>
+
+    <button onclick="verhoog()">Verhoog</button>
+    <button onclick="verlaag()">Verlaag</button>
+
+    <script>
+        
+        var waarde = 0;
+
+        
+        function verhoog() {
+            waarde++;
+            document.getElementById("waarde").innerHTML = waarde;
+        }
+
+        
+        function verlaag() {
+            waarde--;
+            document.getElementById("waarde").innerHTML = waarde;
+        }
+    </script>
+
+</body>
+</html>
